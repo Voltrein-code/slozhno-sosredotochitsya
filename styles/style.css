@@ -1,4 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+.prevent-bold {
+  font-weight: normal;
+}
 
 .page {
   display: flex;
@@ -163,11 +166,15 @@
   gap: var(--root-gap);
 }
 
-.text-card__title {
+.section__subtitle, .text-card__title {
   font-size: inherit;
   color: var(--heading-color);
   background-color: var(--accent-color);
   margin: 10px 0;
+}
+
+.section__subtitle {
+  margin-top: 20px;
 }
 
 .text-card__text {
