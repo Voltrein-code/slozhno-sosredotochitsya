@@ -11,7 +11,6 @@
   --heading-color: #000028;
   --decoration-color: #ff0070;
   --title-color: #db00ff;
-  --decorated-border-style: 1px solid var(--decoration-color);
   --cover-image: url(../images/cover-image-dark.png);
   --title-size: 116px;
   --root-gap: 10px;

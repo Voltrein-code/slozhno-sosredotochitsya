@@ -51,6 +51,7 @@
 
 .decorated-zone::before, .decorated-zone::after {
   --element-size: 25px;
+  --decorated-border-style: 1px solid var(--decoration-color);
 
   content: "";
   position: absolute;
@@ -95,7 +96,7 @@
 
 .header__theme-menu {
   align-self: flex-end;
-  color: var(--accent-color);
+  color: var(--decoration-color);
   width: 70px;
 }
 
@@ -111,7 +112,7 @@
 }
 
 .header__theme-menu-item:has(.header__theme-menu-button_active)  {
-  border: var(--decorated-border-style);
+  border: 1px solid var(--decoration-color);
   pointer-events: none;
 }
 
@@ -127,7 +128,7 @@
 }
 
 .header__title, .footer__title {
-  text-shadow: 4px 4px var(--decoration-color);
+  text-shadow: 4px 4px var(--accent-color);
   color: var(--title-color);
   font-size: var(--title-size);
   line-height: 83%;
@@ -156,9 +157,11 @@
 }
 
 .section__title:not(.decorated-text) {
+  --section-title-color: var(--decoration-color);
+
   font-size: inherit;
   line-height: var(--default-line-height);
-  color: var(--accent-color);
+  color: var(--section-title-color);
 }
 
 .text-cards {
@@ -215,5 +218,5 @@
 }
 
 .footer__title {
-  text-shadow: 2px 2px var(--decoration-color);
+  text-shadow: 2px 2px var(--accent-color);
 }
