@@ -126,11 +126,9 @@
   cursor: pointer;
 }
 
-.header__title {
-  --text-color: #db00ff;
-
+.header__title, .footer__title {
   text-shadow: 4px 4px var(--decoration-color);
-  color: var(--text-color);
+  color: var(--title-color);
   font-size: var(--title-size);
   line-height: 83%;
   align-self: center;
@@ -206,4 +204,16 @@
 
 .grid-images__element {
   width: 100%;
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  block-size: 100vh;
+  max-block-size: 668px;
+}
+
+.footer__title {
+  text-shadow: 2px 2px var(--decoration-color);
 }
