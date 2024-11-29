@@ -9,10 +9,19 @@
   font-size: 18px;
   background-color: var(--bg-color);
   font-weight: 400;
+  position: relative;
+}
+
+.page::after {
+  opacity: 50%;
+  content: "";
+  position: absolute;
+  inset: 0;
   background-image: var(--cover-image);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  z-index: -1;
 }
 
 .text-bold {
@@ -20,7 +29,7 @@
 }
 
 .header {
-  width: 100%;
+  position: relative;
   padding-block-start: 75px;
   padding-block-end: 66px;
   display: flex;
@@ -32,26 +41,26 @@
 }
 
 .decorated-zone::before, .decorated-zone::after {
-  --position-indent: 10px;
   --element-size: 25px;
+
   content: "";
   position: absolute;
-  width: var(--element-size);
-  height: var(--element-size);
+  inline-size: var(--element-size);
+  block-size: var(--element-size);
 }
 
 .decorated-zone::before{ 
-  top: var(--position-indent);
-  right: var(--position-indent);
   border-block-start: var(--decorated-border-style);
   border-inline-end: var(--decorated-border-style);
+  inset-inline-end: 0;
+  inset-block-start: var(--root-gap);
 }
 
 .decorated-zone::after{ 
-  bottom: var(--position-indent);
-  left: var(--position-indent);
   border-block-end: var(--decorated-border-style);
   border-inline-start: var(--decorated-border-style);
+  inset-inline-start: 0;
+  inset-block-end: var(--root-gap);
 }
 
 .rec-decoration {
@@ -61,8 +70,8 @@
   color: var(--accent-color);
   line-height: 139%;
   position: absolute;
-  inset-block-start: 10px;
-  inset-inline-end: 19px;
+  inset-block-start: var(--root-gap);
+  inset-inline-end: var(--root-gap);
 }
 
 .rec-decoration::after {
@@ -110,6 +119,7 @@
 
 .header__title {
   --text-color: #db00ff;
+
   text-shadow: 4px 4px var(--decoration-color);
   color: var(--text-color);
   font-size: var(--title-size);
@@ -128,3 +138,4 @@
   max-width: 355px;
   color: var(--text-color);
 }
+
