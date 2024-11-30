@@ -17,6 +17,7 @@
   font-family: var(--font-family);
   font-size: 18px;
   background-color: var(--bg-color);
+  background-attachment: fixed;
   font-weight: 400;
   position: relative;
 }
@@ -38,6 +39,8 @@
 }
 
 .header {
+  block-size: 100vh;
+  min-block-size: 668px;
   position: relative;
   padding-block-start: 75px;
   padding-block-end: 66px;
