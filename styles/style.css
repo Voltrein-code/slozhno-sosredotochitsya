@@ -240,5 +240,35 @@
     inset-inline-end: 9px;
   }
 
-  
+  .main {
+    gap: 80px;
+  }
+
+  .why, .how{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .what {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-cards {
+    margin: 0;
+  }
+
+  .text-card__title {
+    margin-top: 0;
+  }
+
+  .section__content-block {
+    display: flex;
+    flex-direction: column;
+    gap: var(--root-gap);
+  }
+
+  .section__subtitle {
+    margin: 0;
+  }
 }
