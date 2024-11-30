@@ -59,14 +59,14 @@
   block-size: var(--element-size);
 }
 
-.decorated-zone::before{ 
+.decorated-zone::before { 
   border-block-start: var(--decorated-border-style);
   border-inline-end: var(--decorated-border-style);
   inset-inline-end: 0;
   inset-block-start: var(--root-gap);
 }
 
-.decorated-zone::after{ 
+.decorated-zone::after { 
   border-block-end: var(--decorated-border-style);
   border-inline-start: var(--decorated-border-style);
   inset-inline-start: 0;
@@ -340,7 +340,7 @@
   }
 }
 
-@media (width >= 1440px) { 
+@media (width >= 1440px) {
   .page {
     padding-inline: calc((100% - 1440px) / 2);
   }
