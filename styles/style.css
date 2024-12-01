@@ -228,7 +228,7 @@
   gap: var(--root-gap);
 }
 
-.grid-images__element{
+.grid-images__element {
   line-height: 0;
 }
 
@@ -284,7 +284,7 @@
 
   .why, .how {
     display: grid;
-    grid-template-columns: 1fr 2.06fr;
+    grid-template-columns: 1fr 2fr;
   }
 
   .what {
@@ -357,6 +357,10 @@
   .header__theme-menu-list {
     width: 230px;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .why, .how {
+    grid-template-columns: 1fr 2.06fr;
   }
 
   .what .section__title:not(.decorated-text) {
