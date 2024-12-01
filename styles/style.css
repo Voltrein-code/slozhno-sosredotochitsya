@@ -23,7 +23,6 @@
 }
 
 .page::after {
-  opacity: 50%;
   content: "";
   position: absolute;
   inset: 0;
@@ -208,8 +207,11 @@
   gap: var(--root-gap);
 }
 
-.grid-images__element {
-  width: 100%;
+.grid-images__image {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .footer {
@@ -289,12 +291,6 @@
 
   .grid-images {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .grid-images__element {
-    block-size: 100%;
-    object-fit: cover;
-    object-position: center;
   }
 
   .grid-images__element:first-of-type,

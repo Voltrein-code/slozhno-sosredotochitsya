@@ -20,7 +20,7 @@
 
 <body class="page">
   <header class="header decorated-zone">
-    <div class="rec-decoration" aria-hidden="true">REC</div>
+    <span class="rec-decoration" aria-hidden="true">REC</span>
     <nav class="header__theme-menu">
       <ul class="header__theme-menu-list">
         <li class="header__theme-menu-item">
@@ -54,8 +54,9 @@
             <h3 class="text-card__title decorated-text">Многозадачность</h3>
             <p class="text-card__text">Особенно сложно сосредоточиться, когда задач много и все они — важные. Где же
               легендарная многозадачность, когда она так нужна вам (и всем нанимающим менеджерам этого мира)? А дело в
-              том, что её просто не существует. Исследователи <a class="text-card__reference" target="_blank"
-                href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7075496/">выяснили</a>, что мозгу тяжело
+              том, что её просто не существует. Исследователи <a class="text-card__reference" rel="noopener noreferrer"
+                target="_blank" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7075496/">выяснили</a>, что мозгу
+              тяжело
               концентрироваться даже на двух
               делах одновременно. А когда в поле внимания попадает несколько важных задач, организм паникует и выделяет
               кортизол и адреналин — «гормоны стресса». Из-за этого мы работаем невнимательно: ошибаемся и быстро
@@ -139,7 +140,7 @@
             <article class="text-card text-cards__container">
               <h4 class="text-card__title decorated-text prevent-bold">Прогуляйтесь</h4>
               <p class="text-card__text">Или даже пробегитесь. Лучше найти парк или лес: один эксперимент <a
-                  class="text-card__reference" target="_blank"
+                  class="text-card__reference" rel="noopener noreferrer" target="_blank"
                   href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328">показал</a>, что
                 созерцание природы повышает концентрацию, в то время как после просмотра городских пейзажей она наоборот
                 понижается. Можно совместить прогулку с физическими упражнениями или бегом — так в мозг поступит ещё
@@ -170,18 +171,24 @@
     </section>
     <section class="images section">
       <h2 class="section__title decorated-text">А можно в картинках?</h2>
-      <div class="grid-images">
-        <img class="grid-images__element" src="./images/sunset.png" alt="Картинка с изображением заката"
-          loading="lazy" />
-        <img class="grid-images__element" src="./images/ice-cream.png"
-          alt="Картинка с изображением мороженного в виде персонажей" loading="lazy" />
-        <img class="grid-images__element" src="./images/tape.png" alt="Картинка с изображением кассеты"
-          loading="lazy" />
-        <img class="grid-images__element" src="./images/books.png" alt="Картинка с изображением стопки книг"
-          loading="lazy" />
-        <img class="grid-images__element" src="./images/street.png" alt="Картинка с изображением улицы"
-          loading="lazy" />
-      </div>
+      <ul class="grid-images">
+        <li class="grid-images__element">
+          <img class="grid-images__image" src="./images/sunset.png" alt="Картинка с изображением заката" loading="lazy" />
+        </li>
+        <li class="grid-images__element">
+          <img class="grid-images__image" src="./images/ice-cream.png" alt="Картинка с изображением мороженного в виде персонажей"
+            loading="lazy" />
+        </li>
+        <li class="grid-images__element">
+          <img class="grid-images__image" src="./images/tape.png" alt="Картинка с изображением кассеты" loading="lazy" />
+        </li>
+        <li class="grid-images__element">
+          <img class="grid-images__image" src="./images/books.png" alt="Картинка с изображением стопки книг" loading="lazy" />
+        </li>
+        <li class="grid-images__element">
+          <img class="grid-images__image" src="./images/street.png" alt="Картинка с изображением улицы" loading="lazy" />
+        </li>
+      </ul>
     </section>
   </main>
   <footer class="footer decorated-zone">
